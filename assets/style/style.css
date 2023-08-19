@@ -5,12 +5,105 @@
 }
 
 .root {
-  min-height: 90vh;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 2.8125em 20px 0px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 4.875em repeat(6 1fr);
+  grid-template-columns: repeat(11 1fr);
+  max-height: 70vh;
+  /* width: 100%; */
+}
+
+.title {
+  grid-area: 2/2/4/5;
+  font-size: 3.75em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.title_possibilities {
+  padding: 1.5em 0px;
+}
+
+.possibilities_title {
+  font-size: 1.875em;
+}
+
+.subtitle {
+  grid-area: 4/2/5/5;
+  margin-top: 10px;
+  margin-bottom: 1.875em;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.section {
+  grid-area: 3/2/7/11;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0px;
+  margin-top: 40px;
+}
+
+.possibilities {
+  width: 22.8125em;
+}
+
+.possibilities_form {
+  background-color: #ec615b;
+}
+
+.possibilities__pic {
+  width: 100%;
+}
+
+.subscribe {
+  width: 100%;
+  background-color: #ec615b;
+}
+
+.nav {
+  grid-area: 7/2/8/5;
+  margin-bottom: 4.375em;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.link {
+  color: #5222d0;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ec615b;
+}
+
+.link:active {
+  color: #22ca49;
+}
+
+.main__picture {
+  grid-area: 1/5/8/12;
 }
 
 .button {
@@ -23,7 +116,8 @@
 }
 
 .button_big {
-  padding: 28px 30px 21px;
+  grid-area: 5/2/6/4;
+  padding: 25px 30px 21px;
 }
 
 .button__icon {
@@ -37,12 +131,36 @@
 }
 
 .button__text {
-  font-size: 13px;
+  font-size: 0.8125em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
 .button__text_big {
-  font-size: 35px;
+  font-size: 2.1875em;
 }
+
+/* @media screen and (max-width: 1440px) {
+  .root {
+    max-width: 1190px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .root {
+    max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .root {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .root {
+    max-width: none;
+  }
+} */
