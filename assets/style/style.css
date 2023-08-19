@@ -1,0 +1,48 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.root {
+  min-height: 90vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 100px;
+  padding: 13px 16px;
+  background: var(--unnamed, #5222d0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button_big {
+  padding: 28px 30px 21px;
+}
+
+.button__icon {
+  height: 14px;
+  width: 14px;
+}
+
+.button__icon_big {
+  height: 27px;
+  width: 41px;
+}
+
+.button__text {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button__text_big {
+  font-size: 35px;
+}
